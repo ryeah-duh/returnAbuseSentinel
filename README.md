@@ -738,6 +738,3 @@ docker compose exec postgres psql -U sentinel -d sentinel_db -c "SELECT order_id
 - Standard ML practices for held-out evaluation, probability calibration, class imbalance awareness, and monitoring data/model drift.
 - SHAP documentation/concepts for per-prediction feature attribution.
 
-## Attribution note
-
-This project was built iteratively with AI-assisted design, code scaffolding, architecture review, debugging guidance, and documentation. The final project should be reviewed, tested, and understood by its maintainer before any real merchant or customer data is processed.
