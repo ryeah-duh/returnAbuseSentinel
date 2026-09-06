@@ -1,0 +1,11 @@
+======================================================================
+BOOTSTRAP COMPLETE — SAVE THESE KEYS NOW, THEY WON'T BE SHOWN AGAIN
+======================================================================
+Admin key   (full config access): zppBWSNSAOZn5rxbM19RJS9i9nE1qHi1U17vGJOQ7OY
+Ops key     (queue + evidence):   vzxehC6PneV6z4IWWhU6tW-EfjxLoXQHezHGxKrP6RI
+Auditor key (read-only logs):     bt6F9vcdeMAMsbpajBLddCGUPmw-Usoe1vRJOZ8P_MA
+======================================================================
+Exchange a key for a JWT with:
+  curl -X POST http://localhost:8000/auth/token -H "Content-Type: application/json" \
+    -d '{"api_key": "zppBWSNSAOZn5rxbM19RJS9i9nE1qHi1U17vGJOQ7OY"}'
+======================================================================

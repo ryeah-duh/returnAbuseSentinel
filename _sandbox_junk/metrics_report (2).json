@@ -1,0 +1,65 @@
+{
+  "model": "GradientBoostingClassifier (sklearn)",
+  "test_set_size": 3750,
+  "test_auc": 0.8046,
+  "thresholds": {
+    "green_yellow": 0.1,
+    "yellow_red": 0.675
+  },
+  "band_distribution": [
+    {
+      "band": "Green",
+      "count": 2356,
+      "abuse_rate": 0.06706281833616298,
+      "avg_order_value": 1823.335759762309
+    },
+    {
+      "band": "Yellow",
+      "count": 1148,
+      "abuse_rate": 0.22560975609756098,
+      "avg_order_value": 1889.9928832752614
+    },
+    {
+      "band": "Red",
+      "count": 246,
+      "abuse_rate": 0.8739837398373984,
+      "avg_order_value": 1852.18662601626
+    }
+  ],
+  "red_only_hard_flag": {
+    "precision": 0.874,
+    "recall": 0.34
+  },
+  "yellow_plus_red_any_flag": {
+    "precision": 0.34,
+    "recall": 0.75
+  },
+  "cost_model_inr": {
+    "cost_manual_review_red": 150,
+    "cost_inspection_yellow": 40,
+    "cost_friction_yellow_genuine": 5,
+    "fraction_of_order_value_lost_on_miss": 0.6
+  },
+  "business_impact": {
+    "naive_approve_all_loss_inr": 672920.0,
+    "sentinel_system_loss_inr": 317821.0,
+    "loss_prevented_inr": 355099.0,
+    "loss_reduction_pct": 52.8,
+    "automation_rate_green_pct": 62.8
+  },
+  "top_feature_importances": {
+    "image_ai_artifact_score": 0.1013,
+    "claim_text_susp": 0.0912,
+    "return_rate_hist": 0.0749,
+    "bracketing_score": 0.0623,
+    "weight_mismatch_kg": 0.0333,
+    "refund_to_keep_count": 0.0177,
+    "shared_identifier_flag": 0.0082,
+    "days_to_claim": 0.0035,
+    "carrier_scan_gap": 0.0028,
+    "account_age_days": 0.0013,
+    "order_value": 0.001,
+    "past_orders": 0.0003,
+    "category": -0.0005
+  }
+}
